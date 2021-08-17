@@ -130,6 +130,7 @@ export default class Button extends Image {
         this.onDownSignal.removeAll();
         this.onUpSignal.removeAll();
         this.onOutSignal.removeAll();
+        this.onOvertSignal.removeAll();
         this.off('pointerdown', this.onDown, this);
         this.off('pointerupoutside', this.onOut, this);
         this.off('pointerout', this.onOut, this);

@@ -45,18 +45,18 @@ class Stage {
 
     public static get viewWidth(): number {return Stage.stageInfo.viewWidth;}
     public static get viewHeight(): number {return Stage.stageInfo.viewHeight;}
-    public static get minBoundsLeft() {return (Stage.viewWidth - Stage.minBoundsWidth) * 0.5;}
-    public static get minBoundsRight() {return Stage.minBoundsLeft + Stage.minBoundsWidth;}
-    public static get minBoundsTop() {return (Stage.viewHeight - Stage.minBoundsHeight) * 0.5;}
-    public static get minBoundsBottom() {return Stage.minBoundsTop + Stage.minBoundsHeight;}
-    public static get minBoundsWidth() {return Stage.stageInfo.minBounds.w;}
-    public static get minBoundsHeight() {return Stage.stageInfo.minBounds.h;}
-    public static get maxBoundsLeft() {return Stage.stageInfo.maxBounds.x;}
-    public static get maxBoundsRight() {return Stage.maxBoundsLeft + Stage.maxBoundsWidth;}
-    public static get maxBoundsTop() {return Stage.stageInfo.maxBounds.y;}
-    public static get maxBoundsBottom() {return Stage.maxBoundsTop + Stage.maxBoundsHeight;}
-    public static get maxBoundsWidth() {return Stage.stageInfo.maxBounds.w;}
-    public static get maxBoundsHeight() {return Stage.stageInfo.maxBounds.h;}
+    public static get minBoundsLeft(): number {return (Stage.viewWidth - Stage.minBoundsWidth) * 0.5;}
+    public static get minBoundsRight(): number {return Stage.minBoundsLeft + Stage.minBoundsWidth;}
+    public static get minBoundsTop(): number {return (Stage.viewHeight - Stage.minBoundsHeight) * 0.5;}
+    public static get minBoundsBottom(): number {return Stage.minBoundsTop + Stage.minBoundsHeight;}
+    public static get minBoundsWidth(): number {return Stage.stageInfo.minBounds.w;}
+    public static get minBoundsHeight(): number {return Stage.stageInfo.minBounds.h;}
+    public static get maxBoundsLeft(): number {return Stage.stageInfo.maxBounds.x;}
+    public static get maxBoundsRight(): number {return Stage.maxBoundsLeft + Stage.maxBoundsWidth;}
+    public static get maxBoundsTop(): number {return Stage.stageInfo.maxBounds.y;}
+    public static get maxBoundsBottom(): number {return Stage.maxBoundsTop + Stage.maxBoundsHeight;}
+    public static get maxBoundsWidth(): number {return Stage.stageInfo.maxBounds.w;}
+    public static get maxBoundsHeight(): number {return Stage.stageInfo.maxBounds.h;}
     public static get layout(): Layout {return Stage.stageInfo.layout;}
     public static get scale(): number {return Stage.stageInfo.scale;}
 

@@ -23,17 +23,17 @@ export default class NumTweener {
         });
     }
 
-    public start(params: NumTweenParams) {
+    public start(params: NumTweenParams): void {
         this.tween.stop();
         const from = params.from !== undefined ? params.from : this.value;
         this.tween.params({from, to: params.to, duration: params.duration}).start();
     }
 
-    public setText(str: string) {
+    public setText(str: string): void {
         this.tweenTarget.text = str;
     }
 
-    public getValue() {
+    public getValue(): number {
         return this.value;
     }
 
@@ -41,7 +41,7 @@ export default class NumTweener {
         this.value = value;
     }
 
-    public kill() {
+    public kill(): void {
         this.tween.stop();
         this.tweenTarget = null;
 

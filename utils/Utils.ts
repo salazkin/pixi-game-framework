@@ -40,7 +40,7 @@ const autoSizeLabel = (target: Text, str: string, maxWidth: number): void => {
     if (target.width > maxWidth) {
         target.scale.set(maxWidth / target.width);
     }
-}; 
+};
 
 const sequence = (arr: Array<() => Promise<any>>) => arr.reduce((prev, job) => prev.then(job), Promise.resolve());
 

@@ -10,7 +10,7 @@ export default class SpineAnimation extends PIXI.spine.Spine {
         super(Resources.getSpineData(id));
     }
 
-    public play(id: string, loop: boolean = false) {
+    public play(id: string, loop: boolean = false): void {
         this.visible = true;
         this.state.clearListeners();
         this.autoUpdate = true;

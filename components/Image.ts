@@ -9,7 +9,7 @@ export default class Image extends Sprite {
         }
     }
 
-    public setTexture(id: string | Texture) {
+    public setTexture(id: string | Texture): void {
         if (typeof id === "string") {
             let texture = Resources.getTexture(id);
             if (texture) {

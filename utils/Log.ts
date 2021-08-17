@@ -1,3 +1,3 @@
 export default new class Log {
-    trace(str: string) { console.log(str) };
-}
+    public trace(str: string): void {console.log(str);};
+};

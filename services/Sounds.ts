@@ -18,11 +18,11 @@ export default new class Sounds {
         });
     }
 
-    public kill() {
+    public kill(): void {
         this.howl.unload();
     }
 
-    public mute(value: boolean) {
+    public mute(value: boolean): void {
         Howler.mute(value);
     }
 
@@ -31,19 +31,19 @@ export default new class Sounds {
         return id;
     }
 
-    public stop(id: number) {
+    public stop(id: number): void {
         this.howl.stop(id);
     }
 
-    public fadeIn(id: number, duration: number) {
+    public fadeIn(id: number, duration: number): void {
         this.howl.fade(0, 1, duration, id);
     }
 
-    public fadeOut(id: number, duration: number) {
+    public fadeOut(id: number, duration: number): void {
         this.howl.fade(1, 0, duration, id);
     }
 
-    public setGlobalVolume(value: number) {
+    public setGlobalVolume(value: number): void {
         Howler.volume(value);
     }
 
