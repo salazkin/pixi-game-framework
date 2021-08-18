@@ -1,6 +1,6 @@
 
 import {BitmapText, Text} from "pixi.js";
-import Tween from "./Tween";
+import Tween from "../utils/Tween";
 
 export type NumTweenParams = {
     from?: number;

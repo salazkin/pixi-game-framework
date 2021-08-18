@@ -1,7 +1,7 @@
 import {Rect} from "framework/types/Types";
 import {Application, Container} from "pixi.js";
 import Platform from "../utils/Platform";
-import Signal from "./Signal";
+import Signal from "../utils/Signal";
 
 type Bounds = {
     min: {width: number, height: number;};

@@ -1,6 +1,6 @@
 
 import Resources from "framework/services/Resources";
-import Signal from "framework/components/Signal";
+import Signal from "framework/utils/Signal";
 
 
 export default class SpineAnimation extends PIXI.spine.Spine {

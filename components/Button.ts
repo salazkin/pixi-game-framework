@@ -1,5 +1,5 @@
 
-import Signal from "framework/components/Signal";
+import Signal from "framework/utils/Signal";
 import {Point} from "pixi.js";
 import Image from "./Image";
 
