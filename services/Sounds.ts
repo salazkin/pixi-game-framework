@@ -5,9 +5,10 @@ export default new class Sounds {
     private howl: Howl;
     private options: HowlOptions;
 
+    private mute: boolean;
+
     constructor() {
         Howler.autoSuspend = false;
-        //this.mute(true);
     }
 
     public load(options: HowlOptions): Promise<void> {
@@ -18,12 +19,17 @@ export default new class Sounds {
         });
     }
 
-    public kill(): void {
+    public kill() {
         this.howl.unload();
     }
 
-    public mute(value: boolean): void {
+    public setMute(value: boolean) {
+        this.mute = value;
         Howler.mute(value);
+    }
+
+    public isMute(): boolean {
+        return this.mute;
     }
 
     public play(soundName: string, volume = 1): number {
@@ -31,19 +37,19 @@ export default new class Sounds {
         return id;
     }
 
-    public stop(id: number): void {
+    public stop(id: number) {
         this.howl.stop(id);
     }
 
-    public fadeIn(id: number, duration: number): void {
+    public fadeIn(id: number, duration: number) {
         this.howl.fade(0, 1, duration, id);
     }
 
-    public fadeOut(id: number, duration: number): void {
+    public fadeOut(id: number, duration: number) {
         this.howl.fade(1, 0, duration, id);
     }
 
-    public setGlobalVolume(value: number): void {
+    public setGlobalVolume(value: number) {
         Howler.volume(value);
     }
 
